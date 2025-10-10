@@ -4,3 +4,4 @@ pytesseract
 python-docx
 opencv-python-headless
 numpy
+//

@@ -15,7 +15,7 @@ RUN apt-get update && \
       ca-certificates \
       && rm -rf /var/lib/apt/lists/*
 
-# Create workspace
+# Create workspace//
 WORKDIR /workspace
 
 # copy requirements later via devcontainer postCreateCommand, but include default

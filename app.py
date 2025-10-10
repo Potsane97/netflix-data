@@ -21,7 +21,7 @@ def preprocess_pil(img: Image.Image) -> Image.Image:
 
 def image_to_text(img: Image.Image) -> str:
     pil = preprocess_pil(img)
-    # choose a reasonable PSM for documents
+    # choose a reasonable PSM for documents//
     custom_config = r'--oem 3 --psm 3'
     text = pytesseract.image_to_string(pil, lang='eng', config=custom_config)
     return text
